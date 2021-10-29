@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    druid:
+      filters: stat,wall
+
+      web-stat-filter:
+        enabled: true
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: 123
+      aop-patterns: xyz.wuhen.*
+      max-active: 2000
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 1234
+    database: 1
